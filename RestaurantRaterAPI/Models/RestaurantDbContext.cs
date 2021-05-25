@@ -9,6 +9,6 @@ namespace RestaurantRaterAPI.Models
     public class RestaurantDbContext :DbContext
     {
         public RestaurantDbContext() : base("DefaultConnection") { }
-        public DbSet<Restaurant> MyProperty { get; set; }
+        public DbSet<Restaurant> Restaurants { get; set; }
     }
 }
