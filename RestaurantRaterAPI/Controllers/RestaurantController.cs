@@ -26,7 +26,7 @@ namespace RestaurantRaterAPI.Controllers
             {
                 _context.Restaurants.Add(model);
                 await _context.SaveChangesAsync();
-                return Ok();
+                return Ok("Restaurant Successfully Added.");
             }
             return BadRequest(ModelState);
         }
@@ -90,6 +90,10 @@ namespace RestaurantRaterAPI.Controllers
             }
             return InternalServerError();
         }
+        [Route("api/Restaurants/IsRecommended")]
+        public async Task<IHttpActionResult> GetRestaurantByIsRecommended()
+        {
 
+        }
     }
 }

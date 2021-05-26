@@ -16,7 +16,6 @@ namespace RestaurantRaterAPI.Models
         public string Address { get; set; }
 
         public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
-        [Required]
 
         public double Rating
         {

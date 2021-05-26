@@ -27,6 +27,7 @@ namespace RestaurantRaterAPI.Models
         [Range(0, 10)]
 
         public double CleanlinessScore { get; set; }
+
         public double AverageRating => (FoodScore + EnvironmentScore + CleanlinessScore) / 3;
     }
 }
